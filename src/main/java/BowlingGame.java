@@ -62,8 +62,8 @@ public class BowlingGame {
             }
         }
     }
-    int[] nball=new int[ball.Count];
-    ball.CopyTo(nball);
+    int[] nball=new int[ball.size()];
+    ball.toArray(nball);
     int res=0;
     int index=0;
     for(int i=0;i<10;i++){
