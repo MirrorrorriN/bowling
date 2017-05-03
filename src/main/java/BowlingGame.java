@@ -2,7 +2,7 @@ public class BowlingGame {
 
     public int getBowlingScore(String bowlingCode) {
     String[] score=bowlingCode.split("|");;
-    int n=score.length();
+    int n=score.length;
     int[] all=new int[10];
     ArrayList ball=new ArrayList();
     int[] tag={0,0,0,0,0,0,0,0,0,0};
