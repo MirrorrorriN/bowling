@@ -1,12 +1,14 @@
 import java.util.ArrayList;
 public class BowlingGame {
 
-    public static int getBowlingScore(String bowlingCode) {
+    public int getBowlingScore(String bowlingCode) {
     String[] score=bowlingCode.split("\\|");
     int n=score.length;
+    /*
     for(int i=0;i<n;i++){
         System.out.println(score[i]);
     }
+    */
     int[] all=new int[10];
     int[] ball=new int[22];
     int k=0;
@@ -97,9 +99,11 @@ public class BowlingGame {
     }
         return res;
     }
+    /*
     public static void main(String[] args){
         String t1="X|X|X|X|X|X|X|X|X|X||XX";
         int res=getBowlingScore(t1);
         System.out.println(res);
     }
+    */
 }
