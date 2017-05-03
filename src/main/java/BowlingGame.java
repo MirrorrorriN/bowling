@@ -62,17 +62,18 @@ public class BowlingGame {
             }
         }
     }
-
+    int[] nball=new int[ball.Count];
+    ball.CopyTo(nball);
     int res=0;
     int index=0;
     for(int i=0;i<10;i++){
         if(tag[i]==2){
             index+=1;
-            res+=(all[i]+ball.get(index)+ball.get(index+1));
+            res+=(all[i]+nball[index]+nball[index+1]);
         }
         else if(tag[i]==1){
             index+=2;
-            res+=(all[i]+ball.get(index));
+            res+=(all[i]+nball[index]);
         }
         else{
             index+=2;
