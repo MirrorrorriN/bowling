@@ -62,8 +62,7 @@ public class BowlingGame {
             }
         }
     }
-    int[] nball=new int[ball.size()];
-    ball.toArray(nball);
+    int[] nball=(int[])ball.toArray(new int[ball.size()]);
     int res=0;
     int index=0;
     for(int i=0;i<10;i++){
